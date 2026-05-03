@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Pengumuman Kelulusan - SMA Negeri 4 Bulukumba</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f6f8;
+      text-align: center;
+      padding: 50px;
+    }
+    .container {
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      max-width: 400px;
+      margin: auto;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    }
+    h1 {
+      margin-bottom: 10px;
+    }
+    input {
+      width: 100%;
+      padding: 12px;
+      margin-top: 15px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+    }
+    button {
+      margin-top: 15px;
+      padding: 12px;
+      width: 100%;
+      background: #2c7be5;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #1a5fd0;
+    }
+    .result {
+      margin-top: 20px;
+      font-size: 18px;
+      font-weight: bold;
+    }
+    .hidden {
+      display: none;
+    }
+    .logo-header {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 15px;
+      margin-bottom: 15px;
+   }
+   .logo-header img {
+     height: 60px;
+     object-fit: contain;
+   }
+  </style>
+</head>
+
+<body>
+<div class="container">
+
+  <div class="logo-header">
+    <img src="logo-kemdikbud.png">
+    <img src="logo-sulsel.png">
+    <img src="logo-sekolah.png">
+  </div>
+
+  <h2>PENGUMUMAN KELULUSAN</h2>
+  <h3>SMA NEGERI 4 BULUKUMBA</h3>
+
+  <p style="color:gray; font-size:14px;">
+    Tahun Pelajaran 2025/2026
+  </p>
+
+  <p id="countdown" style="font-weight:bold; color:#2a5298;"></p>
+
+  <div id="blocked" class="hidden">
+    <p>Pengumuman belum dibuka.</p>
+    <p>Silakan cek kembali nanti.</p>
+  </div>
+
+  <div id="main">
+    <p>Masukkan NISN Anda</p>
+    <input type="text" id="nisn">
+    <button onclick="cekKelulusan()">CEK HASIL</button>
+  </div>
+
+  <div id="hasil" class="result"></div>
+ </div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
